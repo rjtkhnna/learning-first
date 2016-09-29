@@ -1,0 +1,52 @@
+Installing GIT - 
+*****************************************************************
+$ sudo apt-get install git
+
+Navigate to your Project Directory and RUN following commands-
+
+The first step is to initialize Git in a directory. This is done using the command init, which creates a .git directory that contains all the Git-related information for your project.
+$ git init
+
+Next, we need to configure our name and email. You can do it as follows, replacing the values with your own name and email.
+$ git config --global user.name 'Shaumik'
+$ git config --global user.email 'sd@gmail.com'
+$ git config --global color.ui 'auto'
+
+Staging Files for Commit
+Create some files in the project directory
+$ git status
+$ git add my_file
+$ git add myfile2 myfile3
+$ git rm --cached [file_name]
+
+Commiting Changes
+git commit -m "My first commit"
+
+Checking Diffs
+$ git diff
+$ git diff <filename>
+
+Add Multiple
+$ git add -u //which are changed
+$ git add -a //Commit all changes, can be dangerous
+$ git commit //For Multi line comments
+
+Managing Logs
+$ git log
+$ git show <hash>
+
+
+Pushing Code to Cloud
+$ git remote add origin https://github.com/sdaityari/my_git_project.git
+$ git push -u origin master
+$ git push --force <remote_repository> //If error persists
+
+
+
+Useful Links
+*****************************************************************
+https://www.sitepoint.com/git-for-beginners/
+https://www.sitepoint.com/getting-started-git-team-environment/
+https://codio.com/docs/ide/editing/git/git-primer/
+
+
